@@ -30,16 +30,13 @@ const apiKey =
 
 function SearchPage(props) {
   const navigate = useNavigate();
-
+  const [data, setData] = useState(null);
   const [title, setTitle] = useState('검색어를 입력하세요');
   const [content, setContent] = useState('');
   const onClick = () => {
     superagent
-      .get('https://api.airtable.com/v0/appmfr5Mp5ZbHh1Mc/mtlist', {
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-        },
-      })
+      .get('https://api.airtable.com/v0/appmfr5Mp5ZbHh1Mc/mtlist')
+      .set('Authorization', `Bearer ${apiKey}`)
       .then((response) => {
         setData(response.data);
       });
