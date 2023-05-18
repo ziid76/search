@@ -1,0 +1,24 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "events": "^3.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-is": "18.2.0",
+    "react-router-dom": "6.11.2",
+    "styled-components": "5.3.10",
+    "superagent": "^8.0.9",
+    "zlib": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
